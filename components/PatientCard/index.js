@@ -3,7 +3,7 @@ import TemperatureChart from "../TemperatureCard";
 import { database } from '../../lib/firebase-config';
 // import patients from "../../lib/data/patients";
 import PulseChart from '../PulseChart';
-import RealTimeChart from '../realtimechart';
+import RealTimeChart from '../RealtimeChart';
 
 const dummyData = [
     { time: "10:00", pulse: 70 },
