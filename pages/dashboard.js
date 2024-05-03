@@ -4,9 +4,11 @@
 import Link from 'next/link';
 import { useState ,useEffect } from 'react';
 import TemperatureChart from '../components/TemperatureCard'
-import { database } from '../lib/firebase-config';
-import patients from '../lib/data/patients';
+// import { database } from '../lib/firebase-config';
+// import patients from '../lib/data/patients';
 import PatientCard from '../components/PatientCard';
+import RealTimeChart from '../components/realtimechart';
+
 
 
 
@@ -29,6 +31,7 @@ export default function  Dashboard () {
             {/* Content expands to fill space, pushing footer down */}
             <main className="flex-1">
               <PatientCard />
+              {/* <RealTimeChart/> */}
             </main>
 
             {/* Fixed Footer */}
