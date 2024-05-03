@@ -3,6 +3,7 @@ import TemperatureChart from "../TemperatureCard";
 import { database } from '../../lib/firebase-config';
 // import patients from "../../lib/data/patients";
 import PulseChart from '../PulseChart';
+import RealTimeChart from '../realtimechart';
 
 const dummyData = [
     { time: "10:00", pulse: 70 },
@@ -67,6 +68,7 @@ const PatientCard =() => {
         <div className="bg-white shadow rounded-lg p-6">
           {/* <TemperatureChart data={patients} /> */}
           <PulseChart data={dummyData} />
+        <RealTimeChart/>
         </div>
       </div>
     </>
